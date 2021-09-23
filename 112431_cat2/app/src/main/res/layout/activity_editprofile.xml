@@ -1,0 +1,349 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true">
+
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/space_x2">
+
+            <com.adcoretechnologies.golfbudz.utils.RoundedImageView
+                android:id="@+id/ivPic"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/pic" />
+
+            <TextView
+                style="@style/AppTheme.TextView"
+                android:text="First name" />
+
+            <EditText
+                android:id="@+id/etFrstnme"
+                style="@style/AppTheme.EditText"
+                android:layout_marginTop="0dp"
+                android:hint="Enter name"
+
+                />
+
+            <TextView
+                style="@style/AppTheme.TextView"
+                android:text="Last name" />
+
+            <EditText
+                android:id="@+id/etLstmne"
+                style="@style/AppTheme.EditText"
+                android:layout_marginTop="0dp"
+                android:hint="Enter Last Name" />
+
+            <TextView
+                style="@style/AppTheme.TextView"
+                android:text="Email" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                style="@style/AppTheme.EditText"
+                android:layout_marginTop="0dp"
+                android:inputType="textEmailAddress"
+                android:hint="Enter Email" />
+
+            <TextView
+                style="@style/AppTheme.TextView"
+                android:text="Gender" />
+
+            <EditText
+                android:id="@+id/etSex"
+                style="@style/AppTheme.EditText"
+                android:layout_marginTop="0dp"
+                android:focusable="false"
+                android:hint="Select Gender" />
+
+            <TextView
+                style="@style/AppTheme.TextView"
+                android:text="Age" />
+
+            <EditText
+                android:id="@+id/etAge"
+                style="@style/AppTheme.EditText"
+                android:layout_marginTop="0dp"
+                android:inputType="number"
+                android:hint="Enter Age" />
+
+            <TextView
+                style="@style/AppTheme.TextView"
+                android:text="Do you have a handicap"
+                android:id="@+id/textView2" />
+
+            <!-- <EditText
+                 android:id="@+id/etHandicap"
+                 style="@style/AppTheme.EditText"
+                 android:layout_marginTop="0dp"
+                 android:focusable="false"
+                  android:text="No" />-->
+            <Spinner
+                android:id="@+id/spHandicap"
+                style="@style/AppTheme.EditText"
+                android:spinnerMode="dialog"
+
+                />
+            <LinearLayout
+                android:id="@+id/llhandicap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <TextView
+                style="@style/AppTheme.TextView"
+                android:text="What is your handicap" />
+
+              <EditText
+                  android:id="@+id/etHandicapCount"
+                  style="@style/AppTheme.EditText"
+                  android:layout_marginTop="0dp"
+                  android:inputType="number"
+                  android:maxLength="2"
+                  android:hint="Enter number of handicap" /></LinearLayout>
+            <TextView
+                style="@style/AppTheme.TextView"
+                android:text="Affiliation" />
+
+          <!--  <EditText
+                android:id="@+id/etAffiliate"
+                style="@style/AppTheme.EditText"
+                android:layout_marginTop="0dp"
+                android:hint="Enter description" />-->
+            <Spinner
+                android:id="@+id/spAffiliate"
+                style="@style/AppTheme.EditText"
+                android:spinnerMode="dialog"
+
+                />
+            <LinearLayout
+                android:id="@+id/llCousre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+            <TextView
+                style="@style/AppTheme.TextView"
+                android:text="Select Course" />
+            <Spinner
+                android:id="@+id/spCourses"
+                style="@style/AppTheme.EditText"
+                android:spinnerMode="dialog"
+
+                /></LinearLayout>
+            <TextView
+                style="@style/AppTheme.TextView"
+                android:text="Profession" />
+
+            <!--<EditText
+                android:id="@+id/etProfession"
+                style="@style/AppTheme.EditText"
+                android:layout_marginTop="0dp"
+                android:hint="Enter Profession" />-->
+            <Spinner
+                android:id="@+id/spProfession"
+                style="@style/AppTheme.EditText"
+                android:spinnerMode="dialog"
+
+                />
+
+            <TextView
+                style="@style/AppTheme.TextView"
+                android:text="How many rounds of golf do you play per month" />
+
+            <EditText
+                android:id="@+id/etRound"
+                style="@style/AppTheme.EditText"
+                android:layout_marginTop="0dp"
+                android:inputType="number"
+                android:hint="Enter number of rounds " />
+
+            <TextView
+                style="@style/AppTheme.TextView"
+                android:text="Which do you prefer" />
+
+           <!-- <EditText
+                android:id="@+id/etRefer"
+                style="@style/AppTheme.EditText"
+                android:layout_marginTop="0dp"
+                android:hint="Both" />-->
+            <Spinner
+                android:id="@+id/spRefer"
+                style="@style/AppTheme.EditText"
+                android:spinnerMode="dialog"
+
+                />
+
+            <TextView
+                style="@style/AppTheme.TextView"
+                android:text="Would you like to play in our golfing budz golf days" />
+
+            <EditText
+                android:id="@+id/etLike"
+                style="@style/AppTheme.EditText"
+                android:layout_marginTop="0dp"
+                android:focusable="false"
+                android:hint="Enter Choice" />
+
+            <TextView
+                style="@style/AppTheme.TextView"
+                android:visibility="gone"
+                android:text="Would you like to play in our golfing budz on Social golfing days" />
+
+            <EditText
+                android:id="@+id/etSocialLike"
+                style="@style/AppTheme.EditText"
+                android:layout_marginTop="0dp"
+                android:focusable="false"
+                android:visibility="gone"
+                android:hint="Enter Choice" />
+
+            <TextView
+                style="@style/AppTheme.TextView"
+                android:visibility="gone"
+                android:text="User Type" />
+
+            <EditText
+                android:id="@+id/etType"
+                style="@style/AppTheme.EditText"
+                android:layout_marginTop="0dp"
+                android:visibility="gone"
+                android:hint="" />
+
+
+            <!--<fragment
+                android:id="@+id/componentRoleSelector"
+                android:name="com.golf.budz.core.components.ComponentItemSelector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/component_role_item_selector"></fragment>-->
+            <LinearLayout
+                android:id="@+id/llClubDeatl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/AppTheme.TextView"
+                    android:text="Club name" />
+
+                <EditText
+                    android:id="@+id/etClubName"
+                    style="@style/AppTheme.EditText"
+                    android:layout_marginTop="0dp"
+                    android:hint="Enter Club Name" />
+
+                <TextView
+                    style="@style/AppTheme.TextView"
+                    android:text="Bio" />
+
+                <EditText
+                    android:id="@+id/etDesc"
+                    style="@style/AppTheme.EditText"
+                    android:layout_marginTop="0dp"
+                    android:hint="Enter description" />
+
+                <TextView
+                    style="@style/AppTheme.TextView"
+                    android:text="Address" />
+
+                <EditText
+                    android:id="@+id/etAddress"
+                    style="@style/AppTheme.EditText"
+                    android:layout_marginTop="0dp"
+                    android:hint="Enter full Address" />
+
+                <TextView
+                    style="@style/AppTheme.TextView"
+                    android:text="City" />
+
+                <EditText
+                    android:id="@+id/etCity"
+                    style="@style/AppTheme.EditText"
+                    android:layout_marginTop="0dp"
+                    android:hint="Enter City" />
+
+                <TextView
+                    style="@style/AppTheme.TextView"
+                    android:text="Suburb" />
+
+                <EditText
+                    android:id="@+id/etSubrub"
+                    style="@style/AppTheme.EditText"
+                    android:layout_marginTop="0dp"
+                    android:hint="Enter suburb" />
+
+                <TextView
+                    style="@style/AppTheme.TextView"
+                    android:text="Location" />
+
+
+                <Spinner
+                    android:id="@+id/spLocation"
+                    style="@style/AppTheme.EditText"
+                    android:visibility="visible"
+                    android:spinnerMode="dialog"
+
+                    />
+                <TextView
+                    style="@style/AppTheme.TextView"
+                    android:visibility="gone"
+                    android:text="Operating Hours" />
+
+                <EditText
+                    android:id="@+id/etOperatingHours"
+                    style="@style/AppTheme.EditText"
+                    android:layout_marginTop="0dp"
+                    android:visibility="gone"
+                    android:hint="Enter Operating Hours" />
+
+                <TextView
+                    style="@style/AppTheme.TextView"
+                    android:text="Contact No" />
+
+                <EditText
+                    android:id="@+id/etContactNo"
+                    style="@style/AppTheme.EditText"
+                    android:layout_marginTop="0dp"
+                    android:inputType="number"
+                    android:hint="Contact No" />
+
+
+
+            </LinearLayout>
+            <TextView
+                style="@style/AppTheme.TextView"
+                android:text="Select Region" />
+            <Spinner
+                android:id="@+id/etlocation"
+                style="@style/AppTheme.EditText"
+                android:spinnerMode="dialog"
+
+                />
+            <Button
+                android:id="@+id/btSgnupbtn"
+                style="@style/AppTheme.Button"
+                android:layout_marginTop="@dimen/space_x2"
+                android:text="Update" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>
+
+

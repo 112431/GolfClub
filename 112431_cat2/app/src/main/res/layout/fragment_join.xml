@@ -1,0 +1,135 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/llStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/space_x3"
+            android:gravity="center"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/pbStatus"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:scrollbarStyle="outsideInset" />
+
+            <ImageView
+                android:id="@+id/ivStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_preview_booking" />
+
+            <TextView
+                android:id="@+id/tvStatus"
+                style="@style/AppTheme.TextView"
+                android:gravity="center"
+                android:text="No items to show" />
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/rlSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ellipsize="start"
+                android:gravity="start"
+                android:imeOptions="actionSearch"
+                android:hint="Search....."
+                android:textColorHint="@color/colorWhite"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_circle"
+                android:inputType="text"
+                android:textColor="@color/colorWhite"
+                android:singleLine="true"
+                />
+            <ImageView
+                android:id="@+id/ivSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_search"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                />
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:scrollbars="vertical"
+            android:layout_below="@+id/rlSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+<!--    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="@dimen/space_x4"
+        app:backgroundTint="@color/colorWhite"
+        android:src="@drawable/ic_filter"/>-->
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        fab:menu_backgroundColor="#ccffffff"
+        fab:menu_fab_label="Choose an action"
+        fab:fab_colorNormal="@color/colorWhite"
+        fab:fab_colorPressed="@color/colorGrayTrans"
+        fab:fab_colorRipple="#99FFFFFF"
+        fab:fab_showShadow="true"
+        fab:menu_labels_colorNormal="#333333"
+        fab:menu_labels_colorPressed="#444444"
+        fab:menu_labels_colorRipple="#66FFFFFF"
+        fab:menu_labels_showShadow="true"
+        fab:menu_labels_maxLines="-1"
+        fab:menu_labels_position="left"
+        fab:menu_openDirection="up"
+        fab:fab_shadowColor="#66000000"
+        fab:menu_labels_ellipsize="end"
+        android:backgroundTint="@color/colorWhite"
+        fab:menu_labels_singleLine="true">
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_filter"
+            fab:fab_label="Apply Filter"
+            app:backgroundTint="@color/colorWhite"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_deletefilter"
+            fab:fab_label="Remove Filter"
+            app:backgroundTint="@color/colorWhite"
+            fab:fab_size="mini" />
+    </com.github.clans.fab.FloatingActionMenu>
+</android.support.design.widget.CoordinatorLayout>

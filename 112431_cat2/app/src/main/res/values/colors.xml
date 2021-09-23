@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#333332</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#9C9B9B</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colordark">#B8B5B4</color>
+    <color name="view_divider_color">#9C9B9B</color>
+    <color name="hintcolor">#B8B5B4</color>
+    <color name="holo_blue_dark">#ff0099cc</color>
+    <color name="fbblue">#2D4487</color>
+    <color name="blue">#2A76F0</color>
+    <color name="red">#FE1616</color>
+    <color name="redhover">#D90303</color>
+    <color name="black">#000</color>
+    <color name="transblack">#99000000</color>
+    <color name="yellow">#F0DFB1</color>
+    <color name="colorGrayTrans">#CC2E2E2E</color>
+    <color name="colorGreen">#008000</color>
+    <!-- Screens background color-->
+    <color name="bg_screen1">#f64c73</color>
+    <color name="bg_screen2">#20d2bb</color>
+    <color name="bg_screen3">#3395ff</color>
+    <color name="bg_screen4">#c873f4</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#A4A4A4</color>
+    <color name="dot_dark_screen2">#A4A4A4</color>
+    <color name="dot_dark_screen3">#A4A4A4</color>
+    <color name="dot_dark_screen4">#A4A4A4</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#2E2E2E</color>
+    <color name="dot_light_screen2">#2E2E2E</color>
+    <color name="dot_light_screen3">#2E2E2E</color>
+    <color name="dot_light_screen4">#2E2E2E</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+
+    <color name="color1">#A4A4A4</color>
+    <color name="color2">#848484</color>
+    <color name="color3">#6E6E6E</color>
+    <color name="color4">#585858</color>
+    <color name="color5">#424242</color>
+    <color name="color6">#2E2E2E</color>
+    <color name="color7">#1C1C1C</color>
+    <color name="color8">#151515</color>
+    <color name="color9">#000000</color>
+
+
+    <color name="boxing_colorPrimary">#000000</color>
+    <color name="boxing_colorPrimaryDark">#ff212121</color>
+    <color name="boxing_colorPrimaryAlpha">#44000000</color>
+    <color name="boxing_colorAccent">#FF4081</color>
+    <color name="boxing_gray">#999999</color>
+    <color name="boxing_gray1">#333333</color>
+    <color name="boxing_white">#ffffff</color>
+    <color name="boxing_white1">#fafafa</color>
+    <color name="boxing_white2">#eaeaea</color>
+    <color name="boxing_black">#000000</color>
+    <color name="boxing_black1">#1b1b1b</color>
+    <color name="boxing_black_alpha15">#26000000</color>
+    <color name="boxing_black_alpha20">#33000000</color>
+    <color name="boxing_black_alpha25">#3c000000</color>
+</resources>

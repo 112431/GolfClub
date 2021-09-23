@@ -1,0 +1,68 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/space_x2"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etText"
+                style="@style/AppTheme.EditText"
+                android:layout_height="80dp"
+                android:background="@drawable/custom_circle"
+                android:drawableLeft="@drawable/ic_golf_flag_and_field"
+                android:hint="Say something about this video" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="250dp">
+
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/ivImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:fitsSystemWindows="true"
+                        android:scaleType="centerCrop"
+                        app:layout_collapseMode="parallax" />
+
+                    <ImageView
+                        android:id="@+id/ivCross"
+                        style="@style/AppTheme.ImageView.Wrap"
+                        android:layout_gravity="right"
+                        app:srcCompat="@drawable/sv_remove" />
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/ivVideoPlay"
+                    style="@style/AppTheme.ImageView.Wrap"
+                    android:layout_centerInParent="true"
+                    app:srcCompat="@drawable/ic_upload" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btnPost"
+        style="@style/AppTheme.Button"
+        android:layout_gravity="bottom"
+        android:text="@string/post" />
+</android.support.design.widget.CoordinatorLayout>

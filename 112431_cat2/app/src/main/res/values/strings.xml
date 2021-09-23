@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name">GolfingBudz</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="lin">Sign In</string>
+    <string name="lup">Sign up</string>
+    <string name="post">Post</string>
+    <string name="url"></string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions." </string>
+
+
+    <string name="Forgot"><u>Forgot Password ?</u> </string>
+    <string name="Create"><u>Create an account</u> </string>
+    <string name="Signup"><u>Signup!</u> </string>
+    <string name="dontt"><u>Dont have an account ?</u> </string>
+    <string name="account">Already have an account !</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="tandc"><a href="">" Terms &amp; Conditions"</a></string>
+    <string name="iaccept">I accept </string>
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Play Request</string>
+    <string name="slide_1_desc">Send or receive play requests from any golfer that fits your profile both locally
+        or internationally,our Golfing Budz system generates direct play requests , public play requests, and
+        refined play requests.
+    </string>
+
+    <string name="slide_2_title">Buy Equipments</string>
+    <string name="slide_2_desc">Buy any golfing equipment and apparel safely and
+        directly from our many online registered pro shops available to our members 24/7
+        and ensure you are kept up to date on all the latest golfing deals and promotions.
+</string>
+
+    <string name="slide_3_title">Search Friends</string>
+    <string name="slide_3_desc">Search all your golfing fiends and invite them to your direct
+        play requests and ensure that both you and your friends enjoy all the exiting Golfing Budz features together.</string>
+
+    <string name="slide_4_title">Budz Chat</string>
+    <string name="slide_4_desc">Stay in touch and enjoy Budz live chats with any golfer both
+        locally and internationally ,, share news ,, images or any golfing related topics directly to your friends.
+</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+    <string name="aboutus">About Us</string>
+    <string name="contactus">Contact Us</string>
+    <string name="help">Help (FAQs)</string>
+    <string name="rate">Rate the App</string>
+    <string name="terms">Terms and Conditions</string>
+    <string name="privacypolicy">Privacy Policy</string>
+    <string name="upadte">Update Version</string>
+    <string name="share">Share App</string>
+    <string name="image_uploading_toast">Please wait for uploading to be done.</string>
+    <string name="post_successfully_submit_toast">Message Sent</string>
+    <string name="post_detail_error_toast">Can not retrieve post detail at the moment</string>
+    <string name="retrieving">Retrieving data</string>
+    <string name="performing_operation">Performing Operation</string>
+    <!--
+    <string name="facebook_app_id">799348380216953</string>
+-->
+    <!--<string name="facebook_app_id">867331700095423</string>-->
+
+    <string name="facebook_app_id">337338070006621</string>
+    <string name="fb_login_protocol_scheme">fb297696994049574</string>
+
+
+    <string name="boxing_ok">OK</string>
+    <string name="boxing_fab_label_camera">take a shot</string>
+    <string name="boxing_image_preview_title_fmt">%1$s/%2$s</string>
+    <string name="boxing_image_preview_ok_fmt">%1$s/%2$s OK</string>
+    <string name="boxing_image_select_ok_fmt">(%1$s/%2$s) OK</string>
+    <string name="boxing_max_image_over_fmt">%d picture is limited</string>
+    <string name="boxing_gif_too_big">the gif is too big!</string>
+    <string name="boxing_pick_single_video">Pick a video</string>
+    <string name="boxing_pick_multi_image">Pick pictures</string>
+    <string name="boxing_pick_single_image_crop">Pick a picture with crop</string>
+    <string name="boxing_pick_single_image">Pick a picture</string>
+    <string name="boxing_video_title">videos</string>
+    <string name="boxing_storage_deny">Device storage read error or temporarily unavailable. Please try again later</string>
+    <string name="boxing_finish">finish</string>
+    <string name="boxing_start_pick">start</string>
+    <string name="boxing_load_image_fail">load fail!</string>
+    <string name="boxing_storage_permission_deny">You need to access the storage device to select the picture
+        , please allow "storage space" right in the "System Settings" dialog box or authorization.</string>
+    <string name="boxing_camera_permission_deny">To access your camera to take pictures,
+        enable the "Use Camera" permission in the "System Settings" or Authorization dialog box.</string>
+    <string name="boxing_default_album">Pictures</string>
+    <string name="boxing_crop_error">sorry, error occurs when cropping</string>
+    <string name="boxing_nothing_found">nothing!</string>
+    <string name="boxing_too_many_picture_fmt">You can only select up to %d pictures</string>
+    <string name="boxing_default_album_name">Pictures</string>
+    <string name="boxing_preview">Preview</string>
+    <string name="title_activity_test_sh">Map</string>
+</resources>

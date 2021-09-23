@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.adcoretechnologies.golfbudz">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--
+     Set custom default icon. This is used when no icon is set for incoming notification messages.
+     See README(https://goo.gl/l4GJaQ) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_clock" />
+        <!--
+             Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <activity
+            android:name=".LauncherActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".home.SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".home.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".home.WelcomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".auth.profile.ProfileActivity" />
+        <activity
+            android:name=".auth.profile.EditProfileActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".auth.profile.ChnagePasswordActivity" />
+        <activity
+            android:name=".items.BuyItemActivity"
+            android:label="Buy Equipment" />
+        <activity android:name=".items.BuyItemDetailActivity" />
+        <activity
+            android:name=".auth.login.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".auth.Register.RegisterActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".more.MoreActivity" />
+        <activity
+            android:name=".notification.NotificationActivity"
+            android:label="Notifications" />
+        <activity
+            android:name=".friends.MyFriendActivity"
+            android:label="Search Friends" />
+        <activity
+            android:name=".event.EventActivity"
+            android:label="Events" />
+        <activity
+            android:name=".event.CreateEventActivity"
+            android:label="Create Event" />
+        <activity
+            android:name=".club.MyClubActivity"
+            android:label="Golf Clubs" />
+        <activity
+            android:name=".club.ClubDetailActivity"
+            android:label="Detail" />
+        <activity
+            android:name=".group.CreatePageActivity"
+            android:label="Create Group" />
+        <activity android:name=".chat.ChatDashboradActivity" />
+        <activity android:name=".auth.login.ForgotActivity" />
+        <activity
+            android:name=".club.JoinClubActivity"
+            android:label="Join Club" />
+        <activity
+            android:name=".items.SellItemActivity"
+            android:label="Post an equipment for sale" />
+        <activity android:name=".home.ImageDataPostActivity" />
+        <activity android:name=".blog.BLogActivity" />
+        <activity android:name=".blog.OnCourseActivity" />
+        <activity android:name=".blog.BlogDeatilActivity" />
+        <activity
+            android:name=".playrequest.PlayRequestActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".playrequest.RequestDetailActivity" />
+        <activity android:name=".event.EventDetailActivity" />
+        <activity android:name=".home.VideoDatapostActivity" />
+        <activity
+            android:name=".more.AboutUsActivity"
+            android:label="About Us" />
+        <activity
+            android:name=".more.ContactUsActivity"
+            android:label="Contact Us" />
+        <activity
+            android:name=".more.TermsConditionActivity"
+            android:label="Terms and Condition" />
+        <activity android:name=".home.VideoActivity" />
+        <activity
+            android:name=".friends.FriendProfileActivity"
+            android:label="Profile" />
+        <activity
+            android:name=".chat.MyChatActivity"
+            android:label="Budz chat" />
+        <activity
+            android:name=".home.comment.CommentsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".group.invite.InviteFriendActivity"
+            android:label="Add Member" />
+        <activity
+            android:name=".group.MyGroupActivity"
+            android:label="My Groups" />
+        <activity
+            android:name=".playrequest.UpComingGanesDetailActivity"
+            android:label="Details" />
+        <activity
+            android:name=".friends.MyAllPlayReqActivity"
+            android:label="My Play Request" />
+        <activity
+            android:name=".boxing_ui.ui.BoxingActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".home.gallery.GalleryActivity" />
+        <activity android:name=".home.VideoPlayActivity" />
+        <activity
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".TestShActivity"
+            android:label="@string/title_activity_test_sh"></activity>
+    </application>
+
+</manifest>
